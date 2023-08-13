@@ -11,6 +11,8 @@ export default {
       white: "#ffffff",
       grey: "#10151b",
       hoverText: "#707376",
+      yellow: "#ffc83d",
+      purple: "#8c46fc",
     },
   },
   plugins: [require("tailwindcss-animated")],

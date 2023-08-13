@@ -5,14 +5,19 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import NavMenu from "./NavMenu";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleClick } from "../features/navClick";
+
 function Header() {
-  const [clickMenu, setClickMenu] = useState(true);
+  // const [clickMenu, setClickMenu] = useState(true);
+  const dispatch = useDispatch();
+  const clickMenu = useSelector((state) => state.navClick.value);
 
   const clickedMenu = () => {
     if (clickMenu) {
-      setClickMenu(false);
+      dispatch(toggleClick(true));
     } else {
-      setClickMenu(true);
+      dispatch(toggleClick(false));
     }
   };
   return (
