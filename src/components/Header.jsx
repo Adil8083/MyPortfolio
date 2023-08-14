@@ -56,9 +56,20 @@ function Header() {
         </a>
       </div>
       <div className="flex items-center space-x-4 pr-12">
-        <LinkedInIcon className="hover:text-hoverText" />
-        <MailIcon className="hover:text-hoverText" />
-        <TwitterIcon className="hover:text-hoverText" />
+        <LinkedInIcon
+          className="hover:text-hoverText cursor-pointer"
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/adil-waheed48/")
+          }
+        />
+        <TwitterIcon
+          className="hover:text-hoverText cursor-pointer"
+          onClick={() => window.open("https://twitter.com/Adil_Waheed887")}
+        />
+        <MailIcon
+          className="hover:text-hoverText cursor-pointer"
+          onClick={() => (window.location = "mailto:adilwahed@gmail.com")}
+        />
       </div>
       {clickMenu ? <></> : <NavMenu />}
     </div>

@@ -4,7 +4,7 @@ import Button from "./Button";
 
 function MainHome() {
   return (
-    <div>
+    <div className="mb-[10%]">
       <div className="w-full h-24 bg-black"></div>
       <div className="flex justify-center items-center w-full h-auto mt-[10vh] ">
         <MainText />
