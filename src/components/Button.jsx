@@ -8,7 +8,7 @@ function Button({ title, type }) {
         <div
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1w_Ik7YWR_oGa6KDsKUCvdqTRpiRZHFNv/view?usp=drive_link"
+              "https://drive.google.com/file/d/1yRRAbzcj2J0Z1ZKtaW305gw1RS-UZz2g/view?usp=sharing"
             )
           }
           className="px-[3%] py-[0.8%] bg-gradient-to-b from-purple to-[#6130af] rounded-[50px] self-stretch text-[13px] font-[700] text-center  tracking-[1px] cursor-pointer hover:from-black hover:to-black "

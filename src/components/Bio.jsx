@@ -23,7 +23,7 @@ function Bio() {
         </p>
         <div className="flex items-center pt-10 w-full flex-wrap">
           {featuresTitles.map((title) => (
-            <div className="px-1 py-2">
+            <div key={title} className="px-1 py-2">
               <FeatureButton title={title} />
             </div>
           ))}

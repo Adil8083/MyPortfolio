@@ -6,7 +6,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 
 function Footer() {
   return (
-    <div className="w-screen h-80 bg-black">
+    <div className="w-full h-80 bg-black">
       <div className="px-60 py-20 flex items-center justify-between h-full w-full">
         <div>
           <p className="text-white font-mono italic text-5xl">Adil</p>
@@ -16,7 +16,11 @@ function Footer() {
           </p>
 
           {NavItems.map((item) => (
-            <a href="" className="pr-7 text-[#a8a8a8] hover:text-white">
+            <a
+              key={item}
+              href=""
+              className="pr-7 text-[#a8a8a8] hover:text-white"
+            >
               {item}
             </a>
           ))}

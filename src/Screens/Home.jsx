@@ -7,6 +7,7 @@ import FeaturCards from "../components/FeaturCards";
 import Research from "../assets/research.svg";
 import TestingSvg from "../assets/test.svg";
 import Debug from "../assets/debug.jpg";
+import ReachOut from "../components/ReachOut";
 
 function Home() {
   return (
@@ -37,6 +38,7 @@ function Home() {
           }
         />
       </div>
+      <ReachOut />
     </div>
   );
 }
