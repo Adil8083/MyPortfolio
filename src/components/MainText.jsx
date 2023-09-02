@@ -65,7 +65,7 @@ function MainText() {
         {clickMenu ? <AnimateText /> : <></>}
       </div>
       <p className="font-bold font-serif sm:text-2xl lg:text-7xl">
-        websites & applications.
+        Websites & Applications.
       </p>
     </div>
   );

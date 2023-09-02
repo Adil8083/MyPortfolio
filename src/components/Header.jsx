@@ -9,7 +9,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleClick } from "../features/navClick";
 
 function Header() {
-  // const [clickMenu, setClickMenu] = useState(true);
   const dispatch = useDispatch();
   const clickMenu = useSelector((state) => state.navClick.value);
 
@@ -51,7 +50,7 @@ function Header() {
         )}
       </div>
       <div className="flex items-center justify-center">
-        <a href="" className="font-bold">
+        <a href="/" className="font-bold">
           P O R T F O L I O
         </a>
       </div>

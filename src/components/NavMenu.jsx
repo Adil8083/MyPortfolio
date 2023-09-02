@@ -1,16 +1,28 @@
 import React from "react";
 import NavItems from "../constants/NavItems";
+import { NavLink } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleClick } from "../features/navClick";
+
 function NavMenu() {
+  const dispatch = useDispatch();
   return (
     <div className="fixed w-full h-full bg-grey top-24 bottom-0 animate-fade">
       <div className="flex flex-col justify-center items-center h-3/4">
         {NavItems.map((item) => (
-          <p
+          <NavLink
             className="font-bold text-4xl pb-10 cursor-pointer animate-fade-up hover:animate-fade-right hover:text-hoverText"
-            key={item}
+            to={"/" + `${item === "Home" ? "" : item.toLowerCase()}`}
+            onClick={() => dispatch(toggleClick(false))}
           >
             {item}
-          </p>
+          </NavLink>
+          // <p
+          //   className="font-bold text-4xl pb-10 cursor-pointer animate-fade-up hover:animate-fade-right hover:text-hoverText"
+          //   key={item}
+          // >
+          //   {item}
+          // </p>
         ))}
       </div>
       <div className="flex justify-center items-center flex-col">

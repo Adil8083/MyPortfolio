@@ -4,9 +4,31 @@ import App from "./App.jsx";
 import "./index.css";
 import { store } from "./store";
 import { Provider } from "react-redux";
+import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
+import ContactUs from "./Screens/ContactUs.jsx";
+import Error404 from "./components/Error404.jsx";
+import LandingPageLayout from "./components/LandingPageLayout.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPageLayout />,
+    errorElement: <Error404 />,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <App />
+    <RouterProvider router={router} />
   </Provider>
 );
