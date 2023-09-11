@@ -24,13 +24,11 @@ function Logo({ name }) {
       : tailwindLogo;
 
   return (
-    <div className="flex justify-center items-center h-auto w-[13%]">
-      <img src={logo} className="w-[70px] h-[70px] " />
-      <div className="h-[80%] w-[70%] flex flex-col items-start justify-center ml-[3%] overflow-hidden">
-        <p className="sm:text-sm lg:text-2xl sm:font-light lg:font-bold">
-          {name}
-        </p>
-        <p className="pt-[5%]">{detail}</p>
+    <div className="md:flex block justify-center items-center ">
+      <img src={logo} className="md:w-[70px] md:h-[70px] w-[40px] h-[40px]" />
+      <div className="">
+        <p className="text-sm md:text-2xl font-bold text-center">{name}</p>
+        <p className="pt-[5%] text-center sm:block hidden">{detail}</p>
       </div>
     </div>
   );

@@ -11,10 +11,10 @@ import ReachOut from "../components/ReachOut";
 
 function Home() {
   return (
-    <div>
+    <>
       <MainHome />
       <Brands />
-      <Bio />
+      {/*<Bio />
       <div className="bg-black flex justify-evenly items-center w-full h-auto p-10 ">
         <FeaturCards
           logo_source={Research}
@@ -38,8 +38,8 @@ function Home() {
           }
         />
       </div>
-      <ReachOut />
-    </div>
+      <ReachOut /> */}
+    </>
   );
 }
 

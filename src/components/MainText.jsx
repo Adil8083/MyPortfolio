@@ -33,21 +33,21 @@ function MainText() {
   const AnimateText = () => (
     <>
       {isCvisible ? (
-        <p className="font-bold  font-serif animate-fade-down animate-duration-[2000ms] w-[12vw] text-purple sm:text-2xl lg:text-7xl">
+        <p className="font-bold font-serif md:text-7xl text-4xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem] text-purple">
           create
         </p>
       ) : (
         <></>
       )}
       {isMvisible ? (
-        <p className="font-bold sm:text-2xl lg:text-7xl font-serif animate-fade-down animate-duration-[2000ms] w-[12vw]  text-yellow">
+        <p className="font-bold font-serif md:text-7xl text-4xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem] text-yellow">
           make
         </p>
       ) : (
         <></>
       )}
       {isDvisible ? (
-        <p className="font-bold sm:text-2xl lg:text-7xl font-serif animate-fade-down animate-duration-[2000ms] w-[12vw]  text-white">
+        <p className="font-bold font-serif md:text-7xl text-4xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem]  text-white">
           design
         </p>
       ) : (
@@ -57,16 +57,19 @@ function MainText() {
   );
 
   return (
-    <div className="flex flex-col justify-center items-center space-y-8">
-      <div className="flex justify-center items-center">
-        <p className="flex font-bold font-serif pr-6 sm:text-2xl lg:text-7xl">
-          Hi!🤘 I
+    <div className="">
+      <div>
+        <div className="flex justify-center items-center">
+          <p className="font-bold font-serif md:text-7xl text-4xl text-center mr-4">
+            Hi!🤘 I
+          </p>
+          {clickMenu ? <AnimateText /> : <></>}
+        </div>
+
+        <p className="font-bold font-serif md:text-7xl text-4xl text-center">
+          Websites & Applications.
         </p>
-        {clickMenu ? <AnimateText /> : <></>}
       </div>
-      <p className="font-bold font-serif sm:text-2xl lg:text-7xl">
-        Websites & Applications.
-      </p>
     </div>
   );
 }

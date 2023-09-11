@@ -26,11 +26,7 @@ function Button({ title, type, onClick }) {
       );
     }
   };
-  return (
-    <>
-      <CustomBtn />
-    </>
-  );
+  return <CustomBtn />;
 }
 
 export default Button;

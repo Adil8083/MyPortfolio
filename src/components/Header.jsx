@@ -21,18 +21,18 @@ function Header() {
   };
   return (
     <div
-      className={`flex fixed justify-between items-center w-full h-24  ${
+      className={`flex fixed justify-between items-center w-[100dvw] h-24 px-5 ${
         clickMenu ? "bg-transparentBlack" : "bg-grey"
       }`}
     >
       <div
-        className="flex justify-center items-center cursor-pointer pl-10"
+        className="flex items-center cursor-pointer"
         onClick={() => clickedMenu()}
       >
         {clickMenu ? (
           <>
             <img className="animate-fade-right" src={HamburgerSvg} alt="SVG" />
-            <p className="font-bold animate-fade-down animate-ease-in-out animate-normal animate-fill-forwards">
+            <p className="font-bold animate-fade-down animate-ease-in-out animate-normal animate-fill-forwards md:visible invisible">
               M E N U
             </p>
           </>
@@ -43,18 +43,22 @@ function Header() {
               src={CrossSvg}
               alt="SVG"
             />
-            <p className="font-bold animate-fade-up animate-ease-in-out animate-normal animate-fill-forwards">
+            <p className="font-bold animate-fade-up animate-ease-in-out animate-normal animate-fill-forwards md:visible invisible">
               C L O S E
             </p>
           </>
         )}
       </div>
-      <div className="flex items-center justify-center">
-        <a href="/" className="font-bold">
-          P O R T F O L I O
-        </a>
-      </div>
-      <div className="flex items-center space-x-4 pr-12">
+      <a
+        href="/"
+        className="flex text-white font-mono font-bold italic md:text-3xl text-xl"
+      >
+        Adil
+      </a>
+      {/* <a href="/" className="flex font-bold md:text-lg text-sm">
+        P O R T F O L I O
+      </a> */}
+      <div className="space-x-4 md:flex hidden">
         <LinkedInIcon
           className="hover:text-hoverText cursor-pointer"
           onClick={() =>
