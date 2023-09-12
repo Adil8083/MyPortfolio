@@ -21,7 +21,7 @@ function ReachOut() {
 
   return (
     <div className="w-full h-auto flex flex-col justify-center items-center py-20">
-      <p className="text-white text-6xl font-mono">Reach Out!</p>
+      <p className="text-white md:text-6xl text-4xl font-mono">Reach Out!</p>
       <div className="pt-10">
         <div>
           <form

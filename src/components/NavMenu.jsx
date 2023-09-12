@@ -7,7 +7,7 @@ import { toggleClick } from "../features/navClick";
 function NavMenu() {
   const dispatch = useDispatch();
   return (
-    <div className="fixed w-full h-full bg-grey top-24 bottom-0 animate-fade">
+    <div className="fixed inset-0 z-10 w-[100dvw] h-[100dvh] bg-grey top-24 bottom-0 animate-fade">
       <div className="flex flex-col justify-center items-center h-3/4">
         {NavItems.map((item) => (
           <NavLink

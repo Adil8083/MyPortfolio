@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import Home from "./Screens/Home";
 
 function App() {

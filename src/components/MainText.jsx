@@ -33,21 +33,21 @@ function MainText() {
   const AnimateText = () => (
     <>
       {isCvisible ? (
-        <p className="font-bold font-serif md:text-7xl text-4xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem] text-purple">
+        <p className="font-bold font-serif md:text-7xl text-3xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem] text-purple">
           create
         </p>
       ) : (
         <></>
       )}
       {isMvisible ? (
-        <p className="font-bold font-serif md:text-7xl text-4xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem] text-yellow">
+        <p className="font-bold font-serif md:text-7xl text-3xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem] text-yellow">
           make
         </p>
       ) : (
         <></>
       )}
       {isDvisible ? (
-        <p className="font-bold font-serif md:text-7xl text-4xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem]  text-white">
+        <p className="font-bold font-serif md:text-7xl text-3xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem]  text-white">
           design
         </p>
       ) : (
@@ -60,13 +60,13 @@ function MainText() {
     <div className="">
       <div>
         <div className="flex justify-center items-center">
-          <p className="font-bold font-serif md:text-7xl text-4xl text-center mr-4">
+          <p className="font-bold font-serif md:text-7xl text-3xl text-center mr-4">
             Hi!🤘 I
           </p>
-          {clickMenu ? <AnimateText /> : <></>}
+          <AnimateText />
         </div>
 
-        <p className="font-bold font-serif md:text-7xl text-4xl text-center">
+        <p className="font-bold font-serif md:text-7xl text-3xl text-center">
           Websites & Applications.
         </p>
       </div>

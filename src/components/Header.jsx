@@ -21,8 +21,8 @@ function Header() {
   };
   return (
     <div
-      className={`flex fixed justify-between items-center w-[100dvw] h-24 px-5 ${
-        clickMenu ? "bg-transparentBlack" : "bg-grey"
+      className={`flex fixed z-10 inset-0 justify-between items-center w-[100dvw] h-24 px-5 ${
+        clickMenu ? "bg-transparentBlack" : "bg-grey "
       }`}
     >
       <div
