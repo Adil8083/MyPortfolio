@@ -57,13 +57,13 @@ function AboutMe() {
         </p>
       </div>
       <div className="flex flex-col items-center justify-center bg-[#0e0e0e] gap-y-3 pb-5">
-        <StatPoints skill={"React JS"} percentage={"80"} />
-        <StatPoints skill={"Tailwind"} percentage={"60"} />
-        <StatPoints skill={"FrontEnd Design"} percentage={"80"} />
-        <StatPoints skill={"Debugging"} percentage={"70"} />
-        <StatPoints skill={"Testing"} percentage={"60"} />
-        <StatPoints skill={"Next JS"} percentage={"20"} />
-        <StatPoints skill={"GitHub"} percentage={"70"} />
+        <StatPoints skill={"React JS"} percentage={"80%"} />
+        <StatPoints skill={"Tailwind"} percentage={"60%"} />
+        <StatPoints skill={"FrontEnd Design"} percentage={"80%"} />
+        <StatPoints skill={"Debugging"} percentage={"70%"} />
+        <StatPoints skill={"Testing"} percentage={"60%"} />
+        <StatPoints skill={"Next JS"} percentage={"20%"} />
+        <StatPoints skill={"GitHub"} percentage={"70%"} />
       </div>
       <div className="flex justify-center items-center flex-wrap py-20 md:px-0 px-10 gap-y-10 gap-x-20 bg-[#0e0e0e] ">
         <Logo name="React JS" />
