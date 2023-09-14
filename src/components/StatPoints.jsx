@@ -1,7 +1,6 @@
 import React from "react";
 
 function StatPoints({ skill, percentage }) {
-  let widht = `w-[${percentage}]`;
   return (
     <div className="lg:w-[50%] w-[80%] flex justify-between items-center gap-x-20">
       <div className="w-full h-[3rem] flex flex-col items-start justify-center">
@@ -10,7 +9,8 @@ function StatPoints({ skill, percentage }) {
         </p>
         <div class="w-full h-1 bg-neutral-200 dark:bg-neutral-600 rounded animate-fade-right animate-duration-[500ms] animate-ease-in">
           <div
-            class={`h-1 bg-yellow rounded ${widht}  animate-fade-right animate-duration-[500ms] animate-ease-in`}
+            style={{ width: percentage }}
+            class={`h-1 bg-yellow rounded animate-fade-right animate-duration-[500ms] animate-ease-in`}
           ></div>
         </div>
       </div>
