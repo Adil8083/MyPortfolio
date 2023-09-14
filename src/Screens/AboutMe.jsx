@@ -1,5 +1,4 @@
 import React from "react";
-import backgroundAbout from "../assets/about-background.jpg";
 import StatPoints from "../components/StatPoints";
 import Logo from "../components/Logo";
 function AboutMe() {
@@ -9,7 +8,7 @@ function AboutMe() {
       <div
         style={{
           backgroundImage:
-            "linear-gradient(180deg, rgba(0, 0, 0, 0.95) 41%, rgba(0, 0, 0, 0.8)),url(/src/assets/about-background.jpg)",
+            "linear-gradient(180deg, rgba(0, 0, 0, 0.95) 41%, rgba(0, 0, 0, 0.8)),url(../src/assets/about-background.jpg)",
         }}
         className="flex flex-col justify-center items-center "
       >
