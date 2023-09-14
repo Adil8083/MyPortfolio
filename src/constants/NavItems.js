@@ -1,2 +1,2 @@
-const NavItems = ["Home", "About Me", "Project", "Contact"];
+const NavItems = ["Home", "About", "Project", "Contact"];
 export default NavItems;

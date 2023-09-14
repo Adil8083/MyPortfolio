@@ -29,7 +29,7 @@ function Bio() {
           ))}
         </div>
       </div>
-      <div className="flex-1 bg-gradient-to-b from-yellow to-black rounded-l-[240px] md:block hidden">
+      <div className="flex-1 bg-gradient-to-b from-yellow to-black rounded-l-[240px] lg:block hidden">
         <img src={tech} className="" />
       </div>
     </div>

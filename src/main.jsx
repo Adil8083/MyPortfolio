@@ -8,6 +8,7 @@ import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import ContactUs from "./Screens/ContactUs.jsx";
 import Error404 from "./components/Error404.jsx";
 import LandingPageLayout from "./components/LandingPageLayout.jsx";
+import AboutMe from "./Screens/AboutMe.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs />,
+      },
+      {
+        path: "/about",
+        element: <AboutMe />,
       },
     ],
   },

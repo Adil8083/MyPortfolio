@@ -36,8 +36,12 @@ function Logo({ name }) {
 
   return (
     <div className="md:flex block justify-center items-center">
-      <img src={logo} className="md:w-[70px] md:h-[70px] w-[40px] h-[40px]" />
-      <div className="md:ml-2 ml-0">
+      <img
+        src={logo}
+        className="md:w-[70px] md:h-[70px] w-[40px] h-[40px] mx-auto"
+        loading="lazy"
+      />
+      <div className="md:ml-2 ml-0 md:mt-0 mt-2">
         <p className="text-sm md:text-xl font-bold md:text-start text-center">
           {name}
         </p>

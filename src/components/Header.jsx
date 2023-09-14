@@ -55,9 +55,6 @@ function Header() {
       >
         Adil
       </a>
-      {/* <a href="/" className="flex font-bold md:text-lg text-sm">
-        P O R T F O L I O
-      </a> */}
       <div className="space-x-4 md:flex hidden">
         <LinkedInIcon
           className="hover:text-hoverText cursor-pointer"

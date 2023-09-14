@@ -35,7 +35,7 @@ function Home() {
             logo_source={Debug}
             title={"Debuging"}
             discrption={
-              "Debugging: Unraveling the digital labyrinth, one line of code at a time."
+              "Unraveling the digital labyrinth, one line of code at a time."
             }
           />
         </div>

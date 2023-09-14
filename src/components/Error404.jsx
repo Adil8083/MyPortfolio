@@ -8,8 +8,8 @@ function Error404() {
       <p className="text-[10rem] font-serif">
         4<span className="text-yellow">0</span>4
       </p>
-      <p className="text-6xl font-sans">SORRY, THERE'S</p>
-      <p className="text-6xl font-sans text-yellow">NOTHING HERE</p>
+      <p className="text-6xl font-sans text-center">SORRY, THERE'S</p>
+      <p className="text-6xl font-sans text-yellow text-center">NOTHING HERE</p>
       <div
         onClick={() => navigate("/")}
         className="bg-yellow text-black font-bold rounded px-8 py-2 mt-10 cursor-pointer"
