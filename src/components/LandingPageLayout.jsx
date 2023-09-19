@@ -6,6 +6,7 @@ function LandingPageLayout() {
   return (
     <div className="bg-[url('/src/assets/concrete-textured-background.jpg')] bg-repeat flex flex-col min-h-screen">
       <Header />
+      <div className="h-24 bg-black w-full"></div>
       <div className="flex-1">
         <Outlet />
       </div>

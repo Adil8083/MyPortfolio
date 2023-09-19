@@ -4,7 +4,7 @@ import Logo from "../components/Logo";
 function AboutMe() {
   return (
     <>
-      <div className=" h-24 bg-black w-full  "></div>
+      {/* <div className=" h-24 bg-black w-full  "></div> */}
       <div
         style={{
           background: `linear-gradient(180deg, rgba(0, 0, 0, 0.95) 41%, rgba(0, 0, 0, 0.8)),url("https://uploads-ssl.webflow.com/606694bd40508c617a3f20fb/606bb189e183a23db0ea64c1_brad-switzer-0G3Kj9L2JH0-unsplash%20(1).jpg")`,
