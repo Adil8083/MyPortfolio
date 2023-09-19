@@ -4,11 +4,13 @@ import App from "./App.jsx";
 import "./index.css";
 import { store } from "./store";
 import { Provider } from "react-redux";
-import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ContactUs from "./Screens/ContactUs.jsx";
 import Error404 from "./components/Error404.jsx";
 import LandingPageLayout from "./components/LandingPageLayout.jsx";
 import AboutMe from "./Screens/AboutMe.jsx";
+import Projects from "./Screens/Projects.jsx";
+import ProjectDetails from "./Screens/ProjectDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <AboutMe />,
+      },
+      {
+        path: "/project",
+        element: <Projects />,
+      },
+      {
+        path: "/project/:projectName",
+        element: <ProjectDetails />,
       },
     ],
   },

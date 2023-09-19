@@ -3,6 +3,7 @@ import NavItems from "../constants/NavItems";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -15,13 +16,13 @@ function Footer() {
         </p>
         <div className="space-x-5 md:mb-0 mb-6">
           {NavItems.map((item) => (
-            <a
+            <Link
               key={item}
-              href=""
+              to={item === "Home" ? "/" : item}
               className="text-[#a8a8a8] hover:text-white space-x-2"
             >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

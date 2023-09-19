@@ -29,13 +29,16 @@ function ReachOut() {
             onSubmit={(e) => e.preventDefault()}
           >
             <div className="flex flex-col ">
-              <label className="font-medium pb-2 text-sm">N A M E</label>
+              <label htmlFor="name" className="font-medium pb-2 text-sm">
+                N A M E
+              </label>
               <input
                 className="bg-[#525252] h-12 rounded-md p-3 border border-grey focus:bg-black hover:bg-black focus:outline-none focus:border-purple"
                 type="text"
                 name="name"
                 id="name"
                 onChange={(e) => setName(e.target.value)}
+                autoComplete="on"
               />
             </div>
             <div className="flex flex-col">
@@ -52,11 +55,14 @@ function ReachOut() {
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
+                autoComplete="on"
               />
               <div className="text-sm pt-2 pl-1 text-[#ff0000]">{error}</div>
             </div>
             <div className="flex flex-col">
-              <label className="font-medium pb-2 text-sm">M E S S A G E</label>
+              <label htmlFor="message" className="font-medium pb-2 text-sm">
+                M E S S A G E
+              </label>
               <textarea
                 className="bg-[#525252] h-28 rounded-md p-3 border border-grey focus:bg-black hover:bg-black focus:outline-none focus:border-purple placeholder-white"
                 name="message"

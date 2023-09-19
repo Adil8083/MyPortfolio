@@ -1,16 +1,22 @@
 import React from "react";
 import StatPoints from "../components/StatPoints";
 import Logo from "../components/Logo";
+import { useLocation } from "react-router-dom";
+import NavigateIndicator from "../components/NavigateIndicator";
 function AboutMe() {
+  let location = useLocation();
+
   return (
     <>
-      {/* <div className=" h-24 bg-black w-full  "></div> */}
       <div
         style={{
           background: `linear-gradient(180deg, rgba(0, 0, 0, 0.95) 41%, rgba(0, 0, 0, 0.8)),url("https://uploads-ssl.webflow.com/606694bd40508c617a3f20fb/606bb189e183a23db0ea64c1_brad-switzer-0G3Kj9L2JH0-unsplash%20(1).jpg")`,
         }}
         className="flex flex-col justify-center items-center"
       >
+        <div className="my-10">
+          <NavigateIndicator path={location.pathname} />
+        </div>
         <div className="w-[70%]">
           <p className="text-white font-mono md:text-5xl text-3xl pt-10 text-center font-bold">
             I'm Adil!✨
@@ -64,6 +70,7 @@ function AboutMe() {
         <StatPoints skill={"Testing"} percentage={"60%"} />
         <StatPoints skill={"Next JS"} percentage={"20%"} />
         <StatPoints skill={"GitHub"} percentage={"70%"} />
+        <StatPoints skill={"Research"} percentage={"90%"} />
       </div>
       <div className="flex justify-center items-center flex-wrap py-20 md:px-0 px-10 gap-y-10 gap-x-20 bg-[#0e0e0e] ">
         <Logo name="React JS" />

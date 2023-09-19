@@ -11,6 +11,7 @@ function NavMenu() {
       <div className="flex flex-col justify-center items-center h-3/4">
         {NavItems.map((item) => (
           <NavLink
+            key={item}
             className="font-bold text-4xl pb-10 cursor-pointer animate-fade-up hover:animate-wiggle hover:text-hoverText"
             to={"/" + `${item === "Home" ? "" : item.toLowerCase()}`}
             onClick={() => dispatch(toggleClick(false))}

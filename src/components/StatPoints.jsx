@@ -7,10 +7,10 @@ function StatPoints({ skill, percentage }) {
         <p className="font-mono  md:text-2xl text-lg text-gray-300 pb-1">
           {skill}
         </p>
-        <div class="w-full h-1 bg-neutral-200 dark:bg-neutral-600 rounded animate-fade-right animate-duration-[500ms] animate-ease-in">
+        <div className="w-full h-1 bg-neutral-200 dark:bg-neutral-600 rounded animate-fade-right animate-duration-[500ms] animate-ease-in">
           <div
             style={{ width: percentage }}
-            class={`h-1 bg-yellow rounded animate-fade-right animate-duration-[500ms] animate-ease-in`}
+            className={`h-1 bg-yellow rounded animate-fade-right animate-duration-[500ms] animate-ease-in`}
           ></div>
         </div>
       </div>
