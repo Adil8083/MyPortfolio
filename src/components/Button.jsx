@@ -10,17 +10,17 @@ function Button({ title, type, onClick }) {
             onClick
               ? onClick()
               : window.open(
-                  "https://drive.google.com/file/d/1yRRAbzcj2J0Z1ZKtaW305gw1RS-UZz2g/view?usp=sharing"
+                  "https://drive.google.com/file/d/1yRRAbzcj2J0Z1ZKtaW305gw1RS-UZz2g/view?usp=sharing",
                 );
           }}
-          className="px-[3%] py-[0.8%] bg-gradient-to-b from-purple to-[#6130af] rounded-[50px] self-stretch text-[13px] font-[700] text-center  tracking-[1px] cursor-pointer hover:from-black hover:to-black "
+          className="cursor-pointer self-stretch rounded-[50px] bg-gradient-to-b from-purple to-[#6130af] px-[3%] py-[0.8%] text-center text-[13px]  font-[700] tracking-[1px] hover:from-black hover:to-black "
         >
           {title}
         </div>
       );
     } else if (type === "outlined") {
       return (
-        <div className="px-[3%] py-[0.8%] bg-transparent border-2 rounded-[50px] self-stretch text-[13px] font-[700] text-center tracking-[1px] cursor-pointer hover:bg-white hover:text-black ">
+        <div className="cursor-pointer self-stretch rounded-[50px] border-2 bg-transparent px-[3%] py-[0.8%] text-center text-[13px] font-[700] tracking-[1px] hover:bg-white hover:text-black ">
           {title}
         </div>
       );

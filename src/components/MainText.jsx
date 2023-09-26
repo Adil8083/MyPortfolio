@@ -33,21 +33,21 @@ function MainText() {
   const AnimateText = () => (
     <>
       {isCvisible ? (
-        <p className="font-bold font-serif md:text-6xl text-3xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem] text-purple">
+        <p className="animate-fade-down text-center font-serif text-3xl font-bold text-purple animate-duration-[2000ms] md:w-[10rem] md:text-6xl">
           create
         </p>
       ) : (
         <></>
       )}
       {isMvisible ? (
-        <p className="font-bold font-serif md:text-6xl text-3xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem] text-yellow">
+        <p className="animate-fade-down text-center font-serif text-3xl font-bold text-yellow animate-duration-[2000ms] md:w-[10rem] md:text-6xl">
           make
         </p>
       ) : (
         <></>
       )}
       {isDvisible ? (
-        <p className="font-bold font-serif md:text-6xl text-3xl text-center animate-fade-down animate-duration-[2000ms] md:w-[10rem]  text-white">
+        <p className="animate-fade-down text-center font-serif text-3xl font-bold text-white animate-duration-[2000ms] md:w-[10rem]  md:text-6xl">
           design
         </p>
       ) : (
@@ -59,14 +59,14 @@ function MainText() {
   return (
     <div className="">
       <div>
-        <div className="flex justify-center items-center">
-          <p className="font-bold font-serif md:text-6xl text-3xl text-center mr-4">
+        <div className="flex items-center justify-center">
+          <p className="mr-4 text-center font-serif text-3xl font-bold md:text-6xl">
             Hi!🤘 I
           </p>
           <AnimateText />
         </div>
 
-        <p className="font-bold font-serif md:text-6xl text-3xl text-center">
+        <p className="text-center font-serif text-3xl font-bold md:text-6xl">
           Websites & Applications
         </p>
       </div>

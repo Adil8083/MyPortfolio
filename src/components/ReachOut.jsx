@@ -20,20 +20,20 @@ function ReachOut() {
   };
 
   return (
-    <div className="w-full h-auto flex flex-col justify-center items-center py-20">
-      <p className="text-white md:text-6xl text-4xl font-mono">Reach Out!</p>
+    <div className="flex h-auto w-full flex-col items-center justify-center py-20">
+      <p className="font-mono text-4xl text-white md:text-6xl">Reach Out!</p>
       <div className="pt-10">
         <div>
           <form
-            className="lg:w-[27rem] sm:w-48 space-y-7"
+            className="space-y-7 sm:w-48 lg:w-[27rem]"
             onSubmit={(e) => e.preventDefault()}
           >
             <div className="flex flex-col ">
-              <label htmlFor="name" className="font-medium pb-2 text-sm">
+              <label htmlFor="name" className="pb-2 text-sm font-medium">
                 N A M E
               </label>
               <input
-                className="bg-[#525252] h-12 rounded-md p-3 border border-grey focus:bg-black hover:bg-black focus:outline-none focus:border-purple"
+                className="h-12 rounded-md border border-grey bg-[#525252] p-3 hover:bg-black focus:border-purple focus:bg-black focus:outline-none"
                 type="text"
                 name="name"
                 id="name"
@@ -42,11 +42,11 @@ function ReachOut() {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="email" className="font-medium pb-2 text-sm">
+              <label htmlFor="email" className="pb-2 text-sm font-medium">
                 E M A I L
               </label>
               <input
-                className={` h-12 bg-[#525252] border-2 rounded-md p-3 outline-none focus:bg-black hover:bg-black focus:border focus:outline-none focus:border-purple ${
+                className={` h-12 rounded-md border-2 bg-[#525252] p-3 outline-none hover:bg-black focus:border focus:border-purple focus:bg-black focus:outline-none ${
                   error ? "border-[#ff0000]" : "border-grey"
                 }`}
                 type="email"
@@ -57,14 +57,14 @@ function ReachOut() {
                 }}
                 autoComplete="on"
               />
-              <div className="text-sm pt-2 pl-1 text-[#ff0000]">{error}</div>
+              <div className="pl-1 pt-2 text-sm text-[#ff0000]">{error}</div>
             </div>
             <div className="flex flex-col">
-              <label htmlFor="message" className="font-medium pb-2 text-sm">
+              <label htmlFor="message" className="pb-2 text-sm font-medium">
                 M E S S A G E
               </label>
               <textarea
-                className="bg-[#525252] h-28 rounded-md p-3 border border-grey focus:bg-black hover:bg-black focus:outline-none focus:border-purple placeholder-white"
+                className="h-28 rounded-md border border-grey bg-[#525252] p-3 placeholder-white hover:bg-black focus:border-purple focus:bg-black focus:outline-none"
                 name="message"
                 id="message"
                 placeholder="Write your message"
@@ -73,7 +73,7 @@ function ReachOut() {
             </div>
             <div
               onClick={() => handleSubmit()}
-              className="bg-transparent border-2 rounded-[50px] p-4 self-stretch text-sm font-medium text-center tracking-[1px] cursor-pointer hover:bg-white hover:text-black "
+              className="cursor-pointer self-stretch rounded-[50px] border-2 bg-transparent p-4 text-center text-sm font-medium tracking-[1px] hover:bg-white hover:text-black "
             >
               Send Mail
             </div>

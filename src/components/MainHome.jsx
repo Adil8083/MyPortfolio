@@ -5,9 +5,9 @@ import Button from "./Button";
 function MainHome() {
   return (
     <div className="h-auto">
-      <div className="md:mt-28 md:mb-28 mt-10 mb-10">
+      <div className="mb-10 mt-10 md:mb-28 md:mt-28">
         <MainText />
-        <div className="flex justify-center mt-9 space-x-5">
+        <div className="mt-9 flex justify-center space-x-5">
           <Button title="Download Resume" type="fill" />
           <Button title="View Projects" type="outlined" />
         </div>

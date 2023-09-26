@@ -7,12 +7,12 @@ import { toggleClick } from "../features/navClick";
 function NavMenu() {
   const dispatch = useDispatch();
   return (
-    <div className="fixed inset-0 z-10 w-[100dvw] h-[100dvh] bg-grey top-24 bottom-0 animate-fade">
-      <div className="flex flex-col justify-center items-center h-3/4">
+    <div className="fixed inset-0 bottom-0 top-24 z-10 h-[100dvh] w-[100dvw] animate-fade bg-grey">
+      <div className="flex h-3/4 flex-col items-center justify-center">
         {NavItems.map((item) => (
           <NavLink
             key={item}
-            className="font-bold text-4xl pb-10 cursor-pointer animate-fade-up hover:animate-wiggle hover:text-hoverText"
+            className="animate-fade-up cursor-pointer pb-10 text-4xl font-bold hover:animate-wiggle hover:text-hoverText"
             to={"/" + `${item === "Home" ? "" : item.toLowerCase()}`}
             onClick={() => dispatch(toggleClick(false))}
           >
@@ -20,7 +20,7 @@ function NavMenu() {
           </NavLink>
         ))}
       </div>
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex flex-col items-center justify-center">
         <p className="font-bold ">L O C A T I O N</p>
         <p>Lahore, Pakistan</p>
       </div>

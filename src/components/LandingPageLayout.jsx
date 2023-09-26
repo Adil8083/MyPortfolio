@@ -6,10 +6,10 @@ import ScrollToTop from "./ScrollToTop";
 function LandingPageLayout() {
   let location = useLocation();
   return (
-    <div className="bg-[url('/src/assets/concrete-textured-background.jpg')] bg-repeat flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col bg-[url('/src/assets/concrete-textured-background.jpg')] bg-repeat">
       <ScrollToTop pathname={location} />
       <Header />
-      <div className="h-24 bg-black w-full"></div>
+      <div className="h-24 w-full bg-black"></div>
       <div className="flex-1">
         <Outlet />
       </div>

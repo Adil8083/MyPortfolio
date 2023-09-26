@@ -16,7 +16,7 @@ function Home() {
       <Brands />
       <Bio />
       <div className="flex items-center justify-center bg-black py-32">
-        <div className="max-w-[80dvw] flex justify-center items-center gap-x-4 flex-wrap gap-y-5">
+        <div className="flex max-w-[80dvw] flex-wrap items-center justify-center gap-x-4 gap-y-5">
           <FeaturCards
             logo_source={Research}
             title={"Research"}

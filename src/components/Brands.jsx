@@ -3,8 +3,8 @@ import reactLogo from "../assets/reactlogo.png";
 import Logo from "./Logo";
 function Brands() {
   return (
-    <div className=" bg-black flex items-center justify-center">
-      <div className="w-[80%] flex justify-center items-center flex-wrap py-20 md:px-0 px-10 gap-y-10 gap-x-20">
+    <div className="flex items-center justify-center bg-black">
+      <div className="flex w-[80%] flex-wrap items-center justify-center gap-x-20 gap-y-10 px-10 py-20 md:px-0">
         <Logo name="React JS" />
         <Logo name="Next JS" />
         <Logo name="Vite JS" />

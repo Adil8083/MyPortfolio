@@ -21,29 +21,29 @@ function Header() {
   };
   return (
     <div
-      className={`flex fixed z-10 inset-0 justify-between items-center w-[100dvw] h-24 px-5 ${
+      className={`fixed inset-0 z-10 flex h-24 w-[100dvw] items-center justify-between px-5 ${
         clickMenu ? "bg-transparentBlack" : "bg-grey "
       }`}
     >
       <div
-        className="flex items-center cursor-pointer"
+        className="flex cursor-pointer items-center"
         onClick={() => clickedMenu()}
       >
         {clickMenu ? (
           <>
             <img className="animate-fade-right" src={HamburgerSvg} alt="SVG" />
-            <p className="font-bold animate-fade-down animate-ease-in-out animate-normal animate-fill-forwards md:visible invisible">
+            <p className="invisible animate-fade-down font-bold animate-normal animate-fill-forwards animate-ease-in-out md:visible">
               M E N U
             </p>
           </>
         ) : (
           <>
             <img
-              className="animate-fade-left animate-ease-in-out animate-normal animate-fill-forwards"
+              className="animate-fade-left animate-normal animate-fill-forwards animate-ease-in-out"
               src={CrossSvg}
               alt="SVG"
             />
-            <p className="font-bold animate-fade-up animate-ease-in-out animate-normal animate-fill-forwards md:visible invisible">
+            <p className="invisible animate-fade-up font-bold animate-normal animate-fill-forwards animate-ease-in-out md:visible">
               C L O S E
             </p>
           </>
@@ -51,23 +51,23 @@ function Header() {
       </div>
       <a
         href="/"
-        className="flex text-white font-mono font-bold italic md:text-3xl text-xl"
+        className="flex font-mono text-xl font-bold italic text-white md:text-3xl"
       >
         Adil
       </a>
-      <div className="space-x-4 md:flex hidden">
+      <div className="hidden space-x-4 md:flex">
         <LinkedInIcon
-          className="hover:text-hoverText cursor-pointer"
+          className="cursor-pointer hover:text-hoverText"
           onClick={() =>
             window.open("https://www.linkedin.com/in/adil-waheed48/")
           }
         />
         <TwitterIcon
-          className="hover:text-hoverText cursor-pointer"
+          className="cursor-pointer hover:text-hoverText"
           onClick={() => window.open("https://twitter.com/Adil_Waheed887")}
         />
         <MailIcon
-          className="hover:text-hoverText cursor-pointer"
+          className="cursor-pointer hover:text-hoverText"
           onClick={() => (window.location = "mailto:adilwahed@gmail.com")}
         />
       </div>

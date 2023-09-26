@@ -35,17 +35,17 @@ function Logo({ name }) {
       : sassLogo;
 
   return (
-    <div className="md:flex block justify-center items-center">
+    <div className="block items-center justify-center md:flex">
       <img
         src={logo}
-        className="md:w-[70px] md:h-[70px] w-[40px] h-[40px] mx-auto"
+        className="mx-auto h-[40px] w-[40px] md:h-[70px] md:w-[70px]"
         loading="lazy"
       />
-      <div className="md:ml-2 ml-0 md:mt-0 mt-2">
-        <p className="text-sm md:text-xl font-bold md:text-start text-center">
+      <div className="ml-0 mt-2 md:ml-2 md:mt-0">
+        <p className="text-center text-sm font-bold md:text-start md:text-xl">
           {name}
         </p>
-        <p className="pt-[5%] text-center sm:block hidden text-neutral-400">
+        <p className="hidden pt-[5%] text-center text-neutral-400 sm:block">
           {detail}
         </p>
       </div>
