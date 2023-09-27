@@ -6,13 +6,7 @@ function Button({ title, type, onClick }) {
     if (type === "fill") {
       return (
         <div
-          onClick={() => {
-            onClick
-              ? onClick()
-              : window.open(
-                  "https://drive.google.com/file/d/181AfhjoFWSJTWog-s9uMoj8_z4ez1d5I/view?usp=sharing",
-                );
-          }}
+          onClick={() => onClick()}
           className="cursor-pointer self-stretch rounded-[50px] bg-gradient-to-b from-purple to-[#6130af] px-[3%] py-[0.8%] text-center text-[13px]  font-[700] tracking-[1px] hover:from-black hover:to-black "
         >
           {title}
@@ -20,7 +14,10 @@ function Button({ title, type, onClick }) {
       );
     } else if (type === "outlined") {
       return (
-        <div className="cursor-pointer self-stretch rounded-[50px] border-2 bg-transparent px-[3%] py-[0.8%] text-center text-[13px] font-[700] tracking-[1px] hover:bg-white hover:text-black ">
+        <div
+          onClick={() => onClick()}
+          className="cursor-pointer self-stretch rounded-[50px] border-2 bg-transparent px-[3%] py-[0.8%] text-center text-[13px] font-[700] tracking-[1px] hover:bg-white hover:text-black "
+        >
           {title}
         </div>
       );
