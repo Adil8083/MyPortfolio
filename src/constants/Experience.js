@@ -1,11 +1,21 @@
 const Expericne = [
   {
-    degree: "Bachelors of Computer Science",
-    school: "Comstas University",
+    title: "Web Application Developer",
+    institute: "Freelance / Self Emplyed",
     country: "Pakistan",
-    from: "2017",
-    to: "2021",
-    detail: "hello",
+    from: "2021",
+    to: "present",
+    detail: "Expand",
+    projects: "Frotie VR, Ola Labs , CriaCao",
+  },
+  {
+    title: "Mobile Application Developer",
+    institute: "Freelance / Self Emplyed",
+    country: "Pakistan",
+    from: "2021",
+    to: "2022",
+    detail: "Expand",
+    projects: "CriaCao, Ola Labs",
   },
 ];
 

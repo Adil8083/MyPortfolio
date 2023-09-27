@@ -56,14 +56,14 @@ function AboutMe() {
           <p className="mt-8 text-center font-mono text-3xl uppercase text-white">
             Journey
           </p>
-          <div className="mt-5 flex flex-wrap justify-between px-20">
+          <div className="mt-5 flex flex-wrap justify-around">
             <section className="w-max">
               <h1 className="mb-5 text-center">EDUCATION</h1>
               <Journey content="education" />
             </section>
             <section className="w-max">
               <h1 className="mb-5 text-center">EXPERIENCE</h1>
-              {/* <Journey content="experience" /> */}
+              <Journey content="experience" />
             </section>
           </div>
         </div>
@@ -82,9 +82,9 @@ function AboutMe() {
         <StatPoints skill={"FrontEnd Design"} percentage={"80%"} />
         <StatPoints skill={"Debugging"} percentage={"70%"} />
         <StatPoints skill={"Testing"} percentage={"60%"} />
+        <StatPoints skill={"Research"} percentage={"90%"} />
         <StatPoints skill={"Next JS"} percentage={"20%"} />
         <StatPoints skill={"GitHub"} percentage={"70%"} />
-        <StatPoints skill={"Research"} percentage={"90%"} />
       </div>
       <div className="flex flex-wrap items-center justify-center gap-x-20 gap-y-10 bg-[#0e0e0e] px-10 py-20 md:px-0 ">
         <Logo name="React JS" />
