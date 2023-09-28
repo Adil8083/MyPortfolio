@@ -3,6 +3,8 @@ import { Outlet, useLocation } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
+import { Analytics } from "@vercel/analytics/react";
+
 function LandingPageLayout() {
   let location = useLocation();
   return (
@@ -12,6 +14,7 @@ function LandingPageLayout() {
       <div className="h-24 w-full bg-black"></div>
       <div className="flex-1">
         <Outlet />
+        <Analytics />
       </div>
       <Footer />
     </div>
