@@ -1,9 +1,11 @@
-import React from "react";
-import StatPoints from "../components/StatPoints";
+import React, { Suspense, lazy } from "react";
 import Logo from "../components/Logo";
 import { useLocation } from "react-router-dom";
 import NavigateIndicator from "../components/NavigateIndicator";
 import Journey from "../components/Journey";
+
+const StatPoints = lazy(() => import("../components/StatPoints"));
+
 function AboutMe() {
   let location = useLocation();
 
@@ -42,17 +44,7 @@ function AboutMe() {
             tools. Each project I undertake is an opportunity to learn,
             innovate, and push the boundaries of what's possible on the web.
           </p>
-          {/* <p className="mb-10 mt-10 text-start font-mono text-gray-300">
-            I'm always eager to take on new and exciting projects. Whether
-            you're a fellow developer, a business owner looking to establish a
-            web presence, or anyone in between, I'd love to connect with you.
-            Feel free to reach out, and let's turn your web ideas into reality!
-            Thank you for visiting my portfolio. I look forward to collaborating
-            with you to create exceptional web experiences.
-          </p> */}
-          {/* <p className="text-white mt-20 text-9xl italic font-mono text-center mb-10">
-            Adil
-          </p> */}
+
           <p className="mt-8 text-center font-mono text-3xl uppercase text-white">
             Journey
           </p>
@@ -77,14 +69,16 @@ function AboutMe() {
         </p>
       </div>
       <div className="flex flex-col items-center justify-center gap-y-3 bg-[#0e0e0e] pb-5">
-        <StatPoints skill={"React JS"} percentage={"80%"} />
-        <StatPoints skill={"Tailwind"} percentage={"60%"} />
-        <StatPoints skill={"FrontEnd Design"} percentage={"80%"} />
-        <StatPoints skill={"Debugging"} percentage={"70%"} />
-        <StatPoints skill={"Testing"} percentage={"60%"} />
-        <StatPoints skill={"Research"} percentage={"90%"} />
-        <StatPoints skill={"Next JS"} percentage={"20%"} />
-        <StatPoints skill={"GitHub"} percentage={"70%"} />
+        <Suspense>
+          <StatPoints skill={"React JS"} percentage={"80%"} />
+          {/* <StatPoints skill={"Tailwind"} percentage={"60%"} /> */}
+          <StatPoints skill={"FrontEnd Design"} percentage={"80%"} />
+          <StatPoints skill={"Debugging"} percentage={"70%"} />
+          <StatPoints skill={"Testing"} percentage={"60%"} />
+          <StatPoints skill={"Research"} percentage={"90%"} />
+          {/* <StatPoints skill={"Next JS"} percentage={"20%"} /> */}
+          <StatPoints skill={"GitHub"} percentage={"70%"} />
+        </Suspense>
       </div>
       <div className="flex flex-wrap items-center justify-center gap-x-20 gap-y-10 bg-[#0e0e0e] px-10 py-20 md:px-0 ">
         <Logo name="React JS" />

@@ -1,16 +1,19 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 import { store } from "./store";
 import { Provider } from "react-redux";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import ContactUs from "./Screens/ContactUs.jsx";
 import Error404 from "./components/Error404.jsx";
-import LandingPageLayout from "./components/LandingPageLayout.jsx";
-import AboutMe from "./Screens/AboutMe.jsx";
-import Projects from "./Screens/Projects.jsx";
-import ProjectDetails from "./Screens/ProjectDetails.jsx";
+
+const App = lazy(() => import("./App.jsx"));
+const ContactUs = lazy(() => import("./Screens/ContactUs.jsx"));
+const LandingPageLayout = lazy(() =>
+  import("./components/LandingPageLayout.jsx"),
+);
+const AboutMe = lazy(() => import("./Screens/AboutMe.jsx"));
+const Projects = lazy(() => import("./Screens/Projects.jsx"));
+const ProjectDetails = lazy(() => import("./Screens/ProjectDetails.jsx"));
 
 const router = createBrowserRouter([
   {
@@ -44,6 +47,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <RouterProvider router={router} />
+    <Suspense>
+      <RouterProvider router={router} />
+    </Suspense>
   </Provider>,
 );

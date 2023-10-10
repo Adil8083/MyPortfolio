@@ -14,7 +14,7 @@ function LandingPageLayout() {
       <div className="h-24 w-full bg-black"></div>
       <div className="flex-1">
         <Outlet />
-        <Analytics />
+        {/* <Analytics /> */}
       </div>
       <Footer />
     </div>

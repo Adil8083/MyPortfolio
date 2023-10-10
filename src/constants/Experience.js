@@ -1,12 +1,12 @@
 const Expericne = [
   {
     title: "Web Application Developer",
-    institute: "Freelance / Self Emplyed",
+    institute: "Freelance / Self Employed",
     country: "Pakistan",
     from: "2021",
     to: "present",
     detail: "Expand",
-    projects: "Frotie VR, Ola Labs , CriaCao",
+    projects: "Frotie VR, Ola Labs",
   },
   {
     title: "Mobile Application Developer",
@@ -15,7 +15,7 @@ const Expericne = [
     from: "2021",
     to: "2022",
     detail: "Expand",
-    projects: "CriaCao, Ola Labs",
+    projects: "CriaCao",
   },
 ];
 
